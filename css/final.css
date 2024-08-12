@@ -1,0 +1,158 @@
+.fondo2{
+    display: none;
+}
+#most_es2{
+    display: flex!important;
+}
+        .navees{
+            display: flex;
+            width: 40%;
+            position: absolute;
+            z-index: 1;
+            right: 40px;
+            bottom: 60px;
+            transform: scale(0);
+            animation-duration: 16s;
+            animation-delay: .8s;
+            animation-fill-mode: forwards;
+            animation-name: movernave;
+        }
+        @keyframes movernave{
+            0%{
+                transform: scale(0);
+            }50%{
+                transform: scale(1);
+            }51%{
+                transform: translateY(0px);
+            }60%{
+                transform: translateY(20px);
+            }100%{
+                transform: translateY(-1200px);
+                
+            }
+        }
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+        .prin{
+            background-color: #ffffff9a;
+            backdrop-filter: blur(5px);
+            width: 80vw;
+            border-radius: 25px;
+            min-height: 57vh;
+            text-align: center;
+            padding: 20px;
+            padding:2vw;
+            position: relative;
+            z-index: 100;
+        }
+        .infofi{
+            color: #414141;
+        }
+        .trofe2{
+            width: 18vw;
+            height: 18vw;
+            padding: 20px 20px 30px 20px;
+        }
+        .continic{
+            position: absolute;
+            transform: translatey(-1100px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 100%;
+            animation-fill-mode: forwards!important;
+            animation-duration: 5s;
+            animation-delay: 4s;
+            animation-name: mosfinm;
+            z-index: 2;
+        }
+        .anima{
+            margin-top: 20px;
+        }
+        .inifond{
+            width: 100%;
+			height: 100vh;
+            background: linear-gradient(180deg, rgb(46, 47, 48) 0%, rgb(30, 35, 71) 49%, rgb(24, 21, 1) 100%); 
+            position: absolute;
+            z-index: 1;
+            animation-fill-mode: forwards!important;
+            animation-delay: 2s!important;
+            animation-duration: 8s!important;
+            animation: finfondco;
+        }
+		.finfond{
+			width: 100%;
+			height: 100vh;
+			color: #fff;
+            background: linear-gradient(90deg, rgba(0,69,255,1),rgba(39,255,0,1),rgba(255,94,0,1),rgba(0,69,255,1),rgba(39,255,0,1),rgba(255,94,0,1),rgba(0,69,255,1),rgba(39,255,0,1),rgba(255,94,0,1));
+			background-size: 400% 400%;
+			position: absolute;
+			animation: cambiar 40s ease-in-out infinite;
+		}
+        .footerm {
+            display: flex;
+            bottom: -5px;
+            animation-fill-mode: forwards!important;
+            animation-duration: 6s;
+            animation-name: footfin;
+            animation-iteration-count: initial;
+        }
+
+		@keyframes cambiar{
+			0%{background-position: 0 50%;}
+			50%{background-position: 100% 50%;}
+			100%{background-position: 0 50%;}
+		}
+        @keyframes finfondco{
+			0%{
+                opacity: 100%;
+            }100%{
+                opacity: 0%;
+            }
+		}
+        @keyframes mosfinm{
+			0%{
+               
+            }100%{
+                transform: translatey(0px);
+            }
+		}
+        @keyframes footfin{
+			0%{
+               
+            }10%{
+                transform: translatey(-8px);
+            }100%{
+                transform: translatey(1500px);
+                display: none!important;
+            }
+		}
+        @media (min-width: 200px) and (max-width: 768px) {
+            html{
+                -ms-text-size-adjust: 100%;
+                overflow: hidden;
+            }
+            .menuc a {
+                font-size: 1.5rem;
+            }  
+            #most_es2{
+                display: none!important;
+            }
+            #most_es22{
+                display: flex!important;
+            }
+            .footerm {
+                bottom: 73px;
+            }
+            .prin {
+                padding: 6vw;
+            }
+            .bynf{
+                display: flex;
+                justify-content: center;
+            }
+        }
